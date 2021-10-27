@@ -17,6 +17,6 @@
 
     <item
         android:id="@+id/info"
-        android:icon="@drawable/more_icon"
+        android:icon="@drawable/map_icon"
         android:title="More" />
 </menu>
