@@ -7,16 +7,17 @@ import kotlinx.android.synthetic.main.activity_start.*
 
 class StartActivity : AppCompatActivity() {
     private val contactFragment = ContactList()
+    private val chatPageFragment = ChatPageFragment()
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_start)
-        val mapFragment = supportFragmentManager
-        switchFragment(contactFragment)
+
+        switchFragment(chatPageFragment)
 
         start_navigation_bar.setOnItemSelectedListener { item ->
             when (item.itemId) {
-                R.id.maps -> switchFragment(contactFragment)
-
+                R.id.contact_page -> switchFragment(contactFragment)
+                R.id.chat_page -> switchFragment(chatPageFragment)
             }
             true
         }

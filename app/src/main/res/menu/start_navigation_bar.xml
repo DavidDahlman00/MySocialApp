@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
     <item
-        android:id="@+id/maps"
-        android:icon="@drawable/map_icon"
-        android:title="Map" />
+        android:id="@+id/chat_page"
+        android:icon="@drawable/chat_icon"
+        android:title="Chats" />
 
     <item
-        android:id="@+id/favourite"
-        android:icon="@drawable/map_icon"
-        android:title="Favourite" />
+        android:id="@+id/contact_page"
+        android:icon="@drawable/contact_page"
+        android:title="@string/contacts" />
 
     <item
         android:id="@+id/search"
